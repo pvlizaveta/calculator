@@ -14,9 +14,12 @@
   display: flex;
   width: 100%;
 }
-.col-2 {
+
+.column {
   width: 200px;
 }
-button .equals {
-  background-color: grey;
+
+div.love{
+  display: flex;
+  height: 200px;
 }
