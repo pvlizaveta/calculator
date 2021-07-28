@@ -37,14 +37,16 @@ class App extends Component {
           <Input input={this.state.input}></Input>
           <div className="row">
             <div className="col-3">
-              <Button handleClick={this.addToInput}>+</Button>
+              <ClearButton handleClear={() => this.setState({ input: "" })}>
+                AC
+              </ClearButton>
               <Button handleClick={this.addToInput}>7</Button>
               <Button handleClick={this.addToInput}>4</Button>
               <Button handleClick={this.addToInput}>1</Button>
               <Button handleClick={this.addToInput}>0</Button>
             </div>
             <div className="col-3">
-              <Button handleClick={this.addToInput}>-</Button>
+              <Button handleClick={this.addToInput}>/</Button>
               <Button handleClick={this.addToInput}>8</Button>
               <Button handleClick={this.addToInput}>5</Button>
               <Button handleClick={this.addToInput}>2</Button>
@@ -52,18 +54,15 @@ class App extends Component {
             </div>
             <div className="col-3">
               <Button handleClick={this.addToInput}>*</Button>
+
               <Button handleClick={this.addToInput}>9</Button>
               <Button handleClick={this.addToInput}>6</Button>
               <Button handleClick={this.addToInput}>3</Button>
-              <ClearButton handleClear={() => this.setState({ input: "" })}>
-                Clear
-              </ClearButton>
+              <Button handleClick={() => this.handleEqual()}>=</Button>
             </div>
             <div className="col-3">
-              <Button handleClick={this.addToInput}>/</Button>
-              <div className="equal">
-                <Button handleClick={() => this.handleEqual()}>=</Button>
-              </div>
+              <Button handleClick={this.addToInput}>+</Button>
+              <Button handleClick={this.addToInput}>-</Button>
             </div>
           </div>
         </div>
