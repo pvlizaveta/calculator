@@ -4,11 +4,11 @@
   align-items: center;
   font-weight: lighter;
   font-size: 1.2em;
-  background-color: rgba(211, 211, 211, 0.548);
+  background-color: rgba(211, 211, 211, 0.616);
   border-radius: 15px;
   margin: 5px;
   margin-top: 10px;
-  color: white;
+  color: black;
   flex: 1;
   height: 4rem;
 }
