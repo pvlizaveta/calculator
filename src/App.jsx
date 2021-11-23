@@ -54,7 +54,6 @@ class App extends Component {
             </div>
             <div className="col-3">
               <Button handleClick={this.addToInput}>*</Button>
-
               <Button handleClick={this.addToInput}>9</Button>
               <Button handleClick={this.addToInput}>6</Button>
               <Button handleClick={this.addToInput}>3</Button>
